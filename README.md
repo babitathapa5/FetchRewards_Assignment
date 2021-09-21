@@ -20,28 +20,39 @@ mvn spring-boot:run
 
 ## Consumption Guide
 Resources Available:
+```shell
 ● Adding transactions for a specific payer and date.
   METHOD : POST
   PATH : /api/transaction
   SAMPLE INPUT BODY (JSON): { "payer": "MILLER COORS", "points": 10000, "timestamp": "2020-11-01T14:00:00Z" }
   SAMPLE OUTPUT RESPONSE (JSON) : 
+  ```shell
   Transaction Updated Sucessfully
-  
+  ```
+ ```
+ 
+  ```shell
 ● Spending points using the rules above and return a list of { "payer": <string>, "points": <integer> } for each call.
   METHOD : POST
   PATH : /api/points
-  SAMPLE INPUT BODY(JSON): { "points": 100 }
+  SAMPLE INPUT BODY(JSON):```shell { "points": 100 }```
   SAMPLE OUTPUT RESPONSE (JSON) : 
+  ```shell
   {
     "MILLER COORS": -100
   }
+  ```
+  ```
   
-  
+  ```shell
 ● Returning all payer point balances.
   METHOD : GET
   PATH : /api/balance
+  ```shell
   SAMPLE OUTPUT RESPONSE (JSON) : 
   {
     "MILLER COORS": 9900
   }
+  ```
+  ```
   
