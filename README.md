@@ -28,23 +28,21 @@ Resources Available:
   SAMPLE OUTPUT RESPONSE (JSON) : 
   ```shell
   Transaction Updated Sucessfully
-  ```
- ```
+  
+```
  
-  ```shell
+```shell
 ● Spending points using the rules above and return a list of { "payer": <string>, "points": <integer> } for each call.
   METHOD : POST
   PATH : /api/points
   SAMPLE INPUT BODY(JSON):```shell { "points": 100 }```
   SAMPLE OUTPUT RESPONSE (JSON) : 
-  ```shell
   {
     "MILLER COORS": -100
   }
-  ```
-  ```
+```
   
-  ```shell
+```shell
 ● Returning all payer point balances.
   METHOD : GET
   PATH : /api/balance
@@ -53,6 +51,5 @@ Resources Available:
   {
     "MILLER COORS": 9900
   }
-  ```
-  ```
+ ```
   
